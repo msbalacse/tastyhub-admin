@@ -10,6 +10,9 @@ module.exports = {
       gridTemplateColumns: {
         main: "250px 1fr",
       },
+      fontFamily: {
+        Comfortaa: "Comfortaa, cursive",
+      },
     },
   },
   plugins: [],

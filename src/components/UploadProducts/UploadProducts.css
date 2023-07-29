@@ -1,13 +1,25 @@
 @tailwind components;
 
 @layer components {
+  .main {
+    @apply h-screen p-10 overflow-y-scroll;
+  }
+  .main h1 {
+    @apply mx-4 my-2 text-4xl font-bold;
+  }
   .form {
-    @apply bg-indigo-600 flex flex-col p-8 gap-4;
+    @apply flex flex-col gap-4 p-8;
   }
   .form .input__control {
-    @apply font-bold;
+    @apply flex flex-col;
+  }
+  .form .input__control > input {
+    @apply max-w-[300px] border-2 border-primary-color p-2 focus:bg-primary-background focus:outline-none rounded-sm;
   }
   .form .input__control > label {
-    @apply mx-2;
+    @apply py-2 text-lg font-medium;
+  }
+  .form .submit__btn {
+    @apply p-4 font-semibold text-white w-fit bg-primary-color;
   }
 }

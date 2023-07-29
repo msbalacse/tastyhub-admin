@@ -1,0 +1,10 @@
+@tailwind components;
+
+@layer components {
+  .ProductCard {
+    @apply p-4 shadow-md bg-primary-background w-fit;
+  }
+  .ProductCard > img {
+    @apply w-[200px];
+  }
+}

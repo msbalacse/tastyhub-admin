@@ -1,0 +1,19 @@
+@tailwind components;
+
+@layer components {
+  .home {
+    @apply p-4 overflow-y-scroll;
+  }
+  .home__title {
+    @apply mt-1 text-4xl font-medium;
+  }
+  .home > .productCount {
+    @apply p-4 my-4 font-bold bg-indigo-500 w-fit;
+  }
+  .home > .productCount > span {
+    @apply ml-4 text-lg text-white;
+  }
+  .home > .products {
+    @apply flex flex-wrap gap-6 mt-6;
+  }
+}
