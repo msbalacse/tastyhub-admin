@@ -10,7 +10,7 @@
   .home > .productCount {
     @apply p-4 my-4 font-bold bg-indigo-500 w-fit;
   }
-  .home > .productCount > span {
+  .home > .productCount {
     @apply ml-4 text-lg text-white;
   }
   .home > .products {

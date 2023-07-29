@@ -1,5 +1,5 @@
 @tailwind components;
 
 .app {
-  @apply w-screen h-screen grid grid-cols-main;
+  @apply grid w-screen h-screen grid-cols-1 md:grid-cols-main;
 }

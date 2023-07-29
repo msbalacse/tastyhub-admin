@@ -6,12 +6,13 @@ const ApiDataContext = createContext();
 
 const ApiDataProvider = ({ children }) => {
   const [apiData, setApiData] = useState([]);
+  const [reload, setReload] = useState(false);
   const dataRef = useRef(collection(db, "products"));
 
   useEffect(() => {
     fetchData();
     console.log("---");
-  }, []);
+  }, [reload]);
 
   async function fetchData() {
     const data = await getDocs(dataRef.current);
@@ -28,7 +29,7 @@ const ApiDataProvider = ({ children }) => {
   }
 
   return (
-    <ApiDataContext.Provider value={{ apiData, fetchData }}>
+    <ApiDataContext.Provider value={{ apiData, fetchData, setReload, reload }}>
       {children}
     </ApiDataContext.Provider>
   );

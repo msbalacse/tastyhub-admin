@@ -7,10 +7,10 @@ import { useNavigate } from "react-router-dom";
 
 const UploadProducts = () => {
   const navigation = useNavigate();
-  const [productId, setProductId] = useState(0);
+  const [productId, setProductId] = useState("");
   const [productName, setProductName] = useState("");
   const [category, setCategory] = useState("");
-  const [price, setPrice] = useState(0);
+  const [price, setPrice] = useState("");
   const [details, setDetails] = useState("");
   const [productImage, setProductImage] = useState(null);
 
@@ -67,7 +67,7 @@ const UploadProducts = () => {
         <div className="input__control">
           <label htmlFor="name">Product Id</label>
           <input
-            type="text"
+            type="number"
             name="product_id"
             value={productId}
             onChange={(e) => setProductId(e.target.value)}
@@ -97,7 +97,7 @@ const UploadProducts = () => {
         <div className="input__control">
           <label htmlFor="name">Price</label>
           <input
-            type="text"
+            type="number"
             name="price"
             value={price}
             onChange={(e) => setPrice(e.target.value)}

@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+
+@layer base {
+  table {
+    @apply w-auto overflow-x-scroll text-center;
+  }
+  th {
+    @apply p-2 py-4 m-2 w-[200px] bg-primary-background;
+  }
+  tr {
+    @apply border-b border-primary-color;
+  }
+  td {
+    @apply py-4;
+  }
+}
+
+@layer components {
+  .manage {
+    @apply p-4 overflow-y-scroll;
+  }
+  .manage__title {
+    @apply text-2xl font-bold;
+  }
+  .table {
+    @apply w-full py-4 overflow-x-scroll;
+  }
+  .icons {
+    @apply flex items-center justify-center w-full text-primary-color;
+  }
+}
