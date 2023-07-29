@@ -1,0 +1,13 @@
+@tailwind components;
+
+@layer components {
+  .form {
+    @apply bg-indigo-600 flex flex-col p-8 gap-4;
+  }
+  .form .input__control {
+    @apply font-bold;
+  }
+  .form .input__control > label {
+    @apply mx-2;
+  }
+}

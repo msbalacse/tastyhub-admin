@@ -1,0 +1,10 @@
+@tailwind components;
+
+@layer components {
+  .nav {
+    @apply h-full col-span-1 p-4 bg-primary-color;
+  }
+  .nav__links {
+    @apply flex flex-col my-8 gap-4;
+  }
+}
