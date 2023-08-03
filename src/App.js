@@ -5,6 +5,7 @@ import UploadProducts from "./components/UploadProducts/UploadProducts";
 import "./App.css";
 import Manage from "./components/Manage/Manage";
 import { ApiDataProvider } from "./context/ApiDataContext";
+import Notifications from "./components/Notifications/Notifications";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/upload" element={<UploadProducts />} />
             <Route path="/manage" element={<Manage />} />
+            <Route path="/notification" element={<Notifications />} />
           </Routes>
         </Router>
       </ApiDataProvider>

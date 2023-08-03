@@ -80,19 +80,25 @@ const UploadProducts = () => {
             type="text"
             name="product_name"
             value={productName}
-            onChange={(e) => setProductName(e.target.value)}
+            onChange={(e) => setProductName(e.target.value.toLowerCase())}
             required
           />
         </div>
         <div className="input__control">
           <label htmlFor="name">Category</label>
-          <input
-            type="text"
+          <select
+            onChange={(e) => setCategory(e.target.value.toLowerCase())}
             name="category"
-            value={category}
-            onChange={(e) => setCategory(e.target.value)}
+            id="category"
+            className="p-2"
             required
-          />
+          >
+            <option value=""></option>
+            <option value="veg">Veg</option>
+            <option value="non-veg">Non Veg</option>
+            <option value="drinks">Drinks</option>
+            <option value="others">Others</option>
+          </select>
         </div>
         <div className="input__control">
           <label htmlFor="name">Price</label>

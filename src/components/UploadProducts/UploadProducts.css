@@ -13,7 +13,8 @@
   .form .input__control {
     @apply flex flex-col;
   }
-  .form .input__control > input {
+  .form .input__control > input,
+  select {
     @apply max-w-[300px] border-2 border-primary-color p-2 focus:bg-primary-background focus:outline-none rounded-sm;
   }
   .form .input__control > label {
